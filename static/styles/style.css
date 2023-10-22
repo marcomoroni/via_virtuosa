@@ -10,7 +10,7 @@
 }
 
 :root {
-    --content-width: 960px;
+    --content-width: 860px;
     --horizontal-margin: 30px;
 }
 
@@ -53,9 +53,9 @@ a:focus .style-like-a-inner {
 }
 
 /* The value is 960 + (30 * 2).
-   960 is the max width
+   860 is the max width
    30 is the margin */
-@media (max-width: 1020px) {
+@media (max-width: 920px) {
     .width-container {
         max-width: unset;
         margin-left: var(--horizontal-margin);

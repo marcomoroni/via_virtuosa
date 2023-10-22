@@ -7,10 +7,10 @@
 <nav class:absolute-pos={absolutePos}>
 	<WidthContainer>
 		<div class="links">
-			<a href="/">Home</a>
+			<a href="/">Via Virtuosa</a>
 			<a href="/servizi">Servizi</a>
-			<a href="/via-virtuosa">Via Virtuosa</a>
-			<a href="/pubblicazioni">Pubblicazioni</a>
+			<!-- <a href="/storia">La storia</a> -->
+			<!-- <a href="/pubblicazioni">Pubblicazioni</a> -->
 			<a href="/contatti">Contatti</a>
 		</div>
 	</WidthContainer>
