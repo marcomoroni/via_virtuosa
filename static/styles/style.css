@@ -1,15 +1,16 @@
 @font-face {
-    font-family: "Figtree";
-    src: url(../fonts/Figtree-VariableFont_wght.ttf);
+    font-family: "Inter";
+    src: url(../fonts/Inter-Variable.ttf);
 }
 
 @font-face {
-    font-family: "Figtree";
-    src: url(../fonts/Figtree-Italic-VariableFont_wght.ttf);
+    font-family: "Inter";
+    src: url(../fonts/Inter-Variable-Italic.ttf);
     font-style: italic;
 }
 
 body {
-    background-color: aquamarine;
-    font-family: "Figtree";
+    background-color: #EDC587;
+    font-family: "Inter";
+    color: #3D2E18;
 }
