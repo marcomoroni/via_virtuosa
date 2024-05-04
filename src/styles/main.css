@@ -9,9 +9,33 @@
 	font-style: italic;
 }
 
+html {
+	--color-accent-dark: #b57428;
+}
+
 body {
 	background-color: #e9e6e1;
 	font-family: 'Figtree', sans-serif;
-	font-weight: 500;
+	font-weight: 520;
 	color: magenta;
+}
+
+* {
+	flex-shrink: 0;
+}
+
+.font-size-default {
+	font-size: 16px;
+}
+
+.font-color-dark {
+	color: #3d2e18;
+}
+
+.font-color-accent {
+	color: #dc9c51;
+}
+
+.font-color-accent-dark {
+	color: var(--color-accent-dark);
 }
