@@ -27,7 +27,7 @@
 	<div class="row-1">
 		<a class="home-link" href="/">
 			<div class="logo-container">
-				<ViaVirtuosaLogo />
+				<ViaVirtuosaLogo fillColor="accent" />
 			</div>
 			<div class="logo-text font-color-accent">Via Virtuosa</div>
 		</a>
