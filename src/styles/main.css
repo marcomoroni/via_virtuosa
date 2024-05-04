@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Figtree';
+	src: url(/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src: url(/fonts/Figtree-Italic-VariableFont_wght.ttf);
+	font-style: italic;
+}
+
+body {
+	background-color: #e9e6e1;
+	font-family: 'Figtree', sans-serif;
+	font-weight: 500;
+	color: magenta;
+}
