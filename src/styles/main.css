@@ -24,6 +24,10 @@ body {
 	flex-shrink: 0;
 }
 
+button {
+	cursor: pointer;
+}
+
 .font-weight-default {
 	font-weight: 520;
 }
