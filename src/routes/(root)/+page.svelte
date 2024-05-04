@@ -3,6 +3,8 @@
 </script>
 
 <div class="landing">
+	<div class="landing-img" />
+	<div class="landing-backdrop" />
 	<div class="landing-padding-top" />
 	<WidthContainer>
 		<div class="logo" />
@@ -21,6 +23,7 @@
 		min-height: 100dvh;
 		display: flex;
 		flex-direction: column;
+		color: white;
 	}
 
 	.landing-padding-top,
@@ -29,7 +32,6 @@
 	}
 
 	.landing-padding-top {
-		flex: 1;
 		min-height: 90px;
 	}
 
@@ -66,10 +68,34 @@
 	.b {
 		font-size: 20px;
 		margin-top: 50px;
-		color: #7d5f31;
+		color: #ffffffc6;
 
 		/* Move all the landing content a little up. */
 		padding-bottom: 10px;
+	}
+
+	.landing-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/images/hochosterwitz.jpg');
+		background-size: cover;
+		background-position: 100% center;
+		z-index: -2;
+	}
+
+	.landing-backdrop {
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #ff990097;
+		z-index: -1;
+		/* mix-blend-mode: multiply; */
 	}
 
 	@media (max-width: 550px) {
