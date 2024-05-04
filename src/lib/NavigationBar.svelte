@@ -53,6 +53,10 @@
 		flex-direction: column;
 	}
 
+	nav :global(*) {
+		--border-radius-transition: border-radius 0.9s ease-out;
+	}
+
 	.row-1 {
 		align-self: center;
 	}

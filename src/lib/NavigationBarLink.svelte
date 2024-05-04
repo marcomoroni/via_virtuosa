@@ -27,6 +27,7 @@
 		text-wrap: nowrap;
 		display: grid;
 		border-radius: calc(infinity * 1px);
+		transition: var(--border-radius-transition);
 	}
 
 	.is-current-page {

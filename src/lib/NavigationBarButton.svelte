@@ -18,6 +18,9 @@
 		display: grid;
 		border-radius: calc(infinity * 1px);
 		border: 2px solid #dad5cf;
+		transition:
+			border-color 1.5s ease-in-out,
+			var(--border-radius-transition);
 	}
 
 	.highlight {
