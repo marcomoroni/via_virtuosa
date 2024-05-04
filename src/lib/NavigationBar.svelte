@@ -73,7 +73,10 @@
 		min-height: 0;
 		display: flex;
 		flex-direction: column;
-		gap: 25px;
+		gap: 23px;
+		padding: 20px;
+		margin-top: 33px;
+		margin-bottom: 24px;
 	}
 
 	.logo-container {

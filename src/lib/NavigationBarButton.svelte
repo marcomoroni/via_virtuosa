@@ -3,24 +3,29 @@
 </script>
 
 <button class="font-size-default font-weight-default font-color-accent-dark" class:highlight>
-	{label}
+	<div class="label font-size-default font-weight-default font-color-accent-dark">
+		{label}
+	</div>
 </button>
 
 <style>
 	button {
-		--horizontal-padding: 26px;
-		--vertical-padding: 19px;
+		--horizontal-padding: 23px;
 		padding-left: var(--horizontal-padding);
 		padding-right: var(--horizontal-padding);
-		padding-top: var(--vertical-padding);
-		padding-bottom: var(--vertical-padding);
-		text-wrap: nowrap;
+		height: 56px;
 		display: grid;
 		border-radius: calc(infinity * 1px);
 		border: 2px solid #dad5cf;
 		transition:
 			border-color 1.5s ease-in-out,
 			var(--border-radius-transition);
+	}
+
+	.label {
+		text-wrap: nowrap;
+		align-self: center;
+		justify-self: center;
 	}
 
 	.highlight {
