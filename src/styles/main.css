@@ -10,12 +10,13 @@
 }
 
 html {
+	--color-background: #e9e6e1;
 	--color-accent: #dc9c51;
 	--color-accent-dark: #b57428;
 }
 
 body {
-	background-color: #e9e6e1;
+	background-color: var(--color-background);
 	font-family: 'Figtree', sans-serif;
 	color: magenta;
 }
@@ -36,6 +37,10 @@ button {
 	font-size: 16px;
 }
 
+.font-color-light {
+	color: #6f6352;
+}
+
 .font-color-dark {
 	color: #3d2e18;
 }
@@ -46,4 +51,13 @@ button {
 
 .font-color-accent-dark {
 	color: var(--color-accent-dark);
+}
+
+.font-line-height-default {
+	line-height: 1.6;
+}
+
+.list-with-disc {
+	list-style-type: disc;
+	margin-left: 25px;
 }
