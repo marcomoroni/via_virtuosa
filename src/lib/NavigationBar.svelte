@@ -51,6 +51,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		overflow-x: hidden;
 	}
 
 	nav :global(*) {
@@ -67,6 +68,11 @@
 		display: flex;
 		flex-direction: row;
 		gap: 9px;
+		overflow-x: scroll;
+		scrollbar-width: none;
+		max-width: 100%;
+		padding-left: var(--small-screen-margin);
+		padding-right: var(--small-screen-margin);
 	}
 
 	.home-link {

@@ -13,6 +13,7 @@ html {
 	--color-background: #e9e6e1;
 	--color-accent: #dc9c51;
 	--color-accent-dark: #b57428;
+	--small-screen-margin: 20px;
 }
 
 body {
