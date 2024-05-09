@@ -14,7 +14,7 @@
 	}
 
 	.what-is-via-virtuosa {
-		grid-column: 2 / 4;
+		grid-column: 3 / 7;
 		font-size: 24px;
 	}
 

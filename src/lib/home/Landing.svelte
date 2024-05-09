@@ -17,13 +17,13 @@
 	}
 
 	.image-container {
-		grid-column: 2 / 5;
+		grid-column: 3 / 9;
 		grid-row: 1 / 2;
 		position: relative;
 	}
 
 	.landing-type {
-		grid-column: 1 / 3;
+		grid-column: 1 / 5;
 		grid-row: 1 / 2;
 		font-size: 60px;
 		font-weight: 700;

@@ -13,7 +13,7 @@ html {
 	--color-background: #e9e6e1;
 	--color-accent: #dc9c51;
 	--color-accent-dark: #b57428;
-	--main-grid-template-columns: repeat(4, 1fr);
+	--main-grid-template-columns: repeat(8, 1fr);
 	--main-grid-column-gap: 20px;
 }
 

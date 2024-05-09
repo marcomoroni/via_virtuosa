@@ -1,5 +1,6 @@
 <script lang="ts">
 	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
+	import LaStoria from '$lib/home/LaStoria.svelte';
 	import Landing from '$lib/home/Landing.svelte';
 	import WhatIsViaVirtuosa from '$lib/home/WhatIsViaVirtuosa.svelte';
 </script>
@@ -14,6 +15,8 @@
 	<Landing />
 	{@render sectionGap()}
 	<WhatIsViaVirtuosa />
+	{@render sectionGap()}
+	<LaStoria />
 	{@render sectionGap()}
 </HorizontalMarginScaffold>
 
