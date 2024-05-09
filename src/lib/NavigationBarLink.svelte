@@ -15,10 +15,10 @@
 
 <style>
 	a {
-		--horizontal-padding: 23px;
+		--horizontal-padding: 22px;
 		padding-left: var(--horizontal-padding);
 		padding-right: var(--horizontal-padding);
-		height: 56px;
+		height: 52px;
 		display: grid;
 		border-radius: calc(infinity * 1px);
 		transition: var(--border-radius-transition);
