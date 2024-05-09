@@ -35,6 +35,10 @@ button {
 	cursor: pointer;
 }
 
+strong {
+	font-weight: 700;
+}
+
 .font-weight-default {
 	font-weight: 520;
 }
