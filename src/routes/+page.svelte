@@ -16,6 +16,8 @@
 	{@render sectionGap()}
 	<WhatIsViaVirtuosa />
 	{@render sectionGap()}
+	<div class="line"></div>
+	{@render sectionGap()}
 	<LaStoria />
 	{@render sectionGap()}
 </HorizontalMarginScaffold>
@@ -27,5 +29,11 @@
 
 	.section-gap {
 		height: 150px;
+	}
+
+	.line {
+		height: 5px;
+		width: 100%;
+		background-color: #dfd5c9;
 	}
 </style>
