@@ -4,16 +4,17 @@
 	import WhatIsViaVirtuosa from '$lib/home/WhatIsViaVirtuosa.svelte';
 </script>
 
+{#snippet sectionGap()}
+	<div class="section-gap"></div>
+{/snippet}
+
 <div class="nav-bar-gap"></div>
 
 <HorizontalMarginScaffold>
 	<Landing />
-
-	<div class="section-gap"></div>
-
+	{@render sectionGap()}
 	<WhatIsViaVirtuosa />
-
-	<div class="section-gap"></div>
+	{@render sectionGap()}
 </HorizontalMarginScaffold>
 
 <style>
