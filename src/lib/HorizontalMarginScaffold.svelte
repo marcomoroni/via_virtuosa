@@ -36,9 +36,9 @@
 		grid-column: 3 / 4;
 	}
 
-	@media (min-width: 1800px) {
+	@media (min-width: 1600px) {
 		.scaffold {
-			grid-template-columns: 1fr 1600px 1fr;
+			grid-template-columns: 1fr 1400px 1fr;
 		}
 	}
 

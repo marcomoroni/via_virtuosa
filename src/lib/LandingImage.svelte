@@ -15,7 +15,13 @@
 		position: relative;
 		width: 100%;
 		aspect-ratio: 912 / 728;
-		min-height: 600px;
+		/* min-height: 600px; */
+	}
+
+	@media (max-width: 1330px) {
+		.stack {
+			aspect-ratio: 1 / 1.3;
+		}
 	}
 
 	.layer-image,

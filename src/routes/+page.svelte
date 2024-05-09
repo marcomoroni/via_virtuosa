@@ -12,14 +12,14 @@
 		</div>
 		<p class="landing-type font-color-accent">Il tuo cyber security personal trainer</p>
 	</div>
+
+	<div class="section-gap"></div>
+
+	<p>
+		<span class="font-color-accent">Via Virtuosa</span> è un aggregatore e acceleratore di competenze
+		indipendente, focalizzato sui servizi di terza parte nei settori della Cyber Security e dell’IT Governance.
+	</p>
 </HorizontalMarginScaffold>
-
-<div class="section-gap"></div>
-
-<p>
-	<span class="font-color-accent">Via Virtuosa</span> è un aggregatore e acceleratore di competenze indipendente,
-	focalizzato sui servizi di terza parte nei settori della Cyber Security e dell’IT Governance.
-</p>
 
 <style>
 	.nav-bar-gap {
@@ -38,6 +38,7 @@
 	.image-container {
 		grid-column: 2 / 5;
 		grid-row: 1 / 2;
+		position: relative;
 	}
 
 	.landing-type {
@@ -49,5 +50,25 @@
 		z-index: 1;
 		margin-top: 35px;
 		margin-bottom: 35px;
+	}
+
+	@media (max-width: 1330px) {
+		.landing {
+			grid-template-columns: unset;
+		}
+
+		.image-container {
+			grid-column: unset;
+			grid-row: 2 / 3;
+		}
+
+		.landing-type {
+			grid-column: unset;
+			grid-row: 1 / 2;
+			font-size: 42px;
+			max-width: 680px;
+			text-align: center;
+			justify-self: center;
+		}
 	}
 </style>
