@@ -144,7 +144,6 @@
 		flex-direction: column;
 		gap: 140px;
 		--bar-thickness: 5px;
-		--margin: 100px;
 		padding-left: var(--margin);
 		padding-right: var(--margin);
 		margin-left: auto;
@@ -184,6 +183,7 @@
 		margin-top: 33px;
 		margin-bottom: 15px;
 		font-size: 20px;
+		text-wrap: balance;
 	}
 
 	li {
@@ -241,7 +241,6 @@
 
 	@media (max-width: 700px) {
 		.list {
-			--margin: 30px;
 			margin-bottom: 60px;
 		}
 	}

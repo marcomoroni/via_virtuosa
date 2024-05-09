@@ -14,6 +14,13 @@ html {
 	--color-accent: #dc9c51;
 	--color-accent-dark: #b57428;
 	--small-screen-margin: 20px;
+	--margin: 100px;
+}
+
+@media (max-width: 700px) {
+	html {
+		--margin: 20px;
+	}
 }
 
 body {
@@ -24,6 +31,10 @@ body {
 
 * {
 	flex-shrink: 0;
+}
+
+img {
+	display: block;
 }
 
 button {
