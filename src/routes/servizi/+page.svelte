@@ -1,4 +1,6 @@
 <script lang="ts">
+	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
+
 	const entries = [
 		{
 			title: 'Cyber security',
@@ -108,34 +110,36 @@
 
 <div class="nav-bar-gap"></div>
 
-<div class="list">
-	{#each entries as entry}
-		<div class="container-for-bar">
-			<div class="bar"></div>
-			<div class="inner">
-				<div class="title-container">
-					<h2 class="title font-color-accent">{entry.title}</h2>
-					<div class="fade"></div>
-				</div>
-				<div class="content-container">
-					{#each entry.intro as introParagraph}
-						<p class="font-color-light font-line-height-default">{introParagraph}</p>
-					{/each}
-					<h3 class="font-color-dark font-line-height-default">Cosa facciamo?</h3>
-					<ul class="list-with-disc">
-						{#each entry.cosaFacciamo as cosaFacciamoEntry}
-							<li class="font-color-light">{cosaFacciamoEntry}</li>
+<HorizontalMarginScaffold>
+	<div class="list">
+		{#each entries as entry}
+			<div class="container-for-bar">
+				<div class="bar"></div>
+				<div class="inner">
+					<div class="title-container">
+						<h2 class="title font-color-accent">{entry.title}</h2>
+						<div class="fade"></div>
+					</div>
+					<div class="content-container">
+						{#each entry.intro as introParagraph}
+							<p class="font-color-light font-line-height-default">{introParagraph}</p>
 						{/each}
-					</ul>
+						<h3 class="font-color-dark font-line-height-default">Cosa facciamo?</h3>
+						<ul class="list-with-disc">
+							{#each entry.cosaFacciamo as cosaFacciamoEntry}
+								<li class="font-color-light">{cosaFacciamoEntry}</li>
+							{/each}
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	{/each}
-</div>
+		{/each}
+	</div>
+</HorizontalMarginScaffold>
 
 <style>
 	.nav-bar-gap {
-		height: 130px;
+		height: 150px;
 	}
 
 	.list {
@@ -144,11 +148,6 @@
 		flex-direction: column;
 		gap: 140px;
 		--bar-thickness: 5px;
-		padding-left: var(--margin);
-		padding-right: var(--margin);
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1600px;
 		margin-bottom: 200px;
 	}
 

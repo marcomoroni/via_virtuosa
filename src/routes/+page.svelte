@@ -1,15 +1,18 @@
 <script lang="ts">
+	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
 	import LandingImage from '$lib/LandingImage.svelte';
 </script>
 
 <div class="nav-bar-gap"></div>
 
-<div class="landing">
-	<div class="image-container">
-		<LandingImage />
+<HorizontalMarginScaffold>
+	<div class="landing">
+		<div class="image-container">
+			<LandingImage />
+		</div>
+		<p class="landing-type font-color-accent">Il tuo cyber security personal trainer</p>
 	</div>
-	<p class="landing-type font-color-accent">Il tuo cyber security personal trainer</p>
-</div>
+</HorizontalMarginScaffold>
 
 <div class="section-gap"></div>
 
@@ -30,8 +33,6 @@
 	.landing {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		padding-left: var(--margin);
-		padding-right: var(--margin);
 	}
 
 	.image-container {

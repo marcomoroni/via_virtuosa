@@ -71,8 +71,8 @@
 		overflow-x: scroll;
 		scrollbar-width: none;
 		max-width: 100%;
-		padding-left: var(--small-screen-margin);
-		padding-right: var(--small-screen-margin);
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	.home-link {
