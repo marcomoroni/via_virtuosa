@@ -15,6 +15,7 @@
 		position: relative;
 		width: 100%;
 		aspect-ratio: 912 / 728;
+		min-height: 600px;
 	}
 
 	.layer-image,
@@ -33,7 +34,7 @@
 	}
 
 	.layer-fade {
-		height: 150px;
+		height: 18%;
 		background: linear-gradient(var(--color-background), transparent);
 	}
 

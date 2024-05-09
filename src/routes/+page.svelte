@@ -11,6 +11,8 @@
 	<p class="landing-type font-color-accent">Il tuo cyber security personal trainer</p>
 </div>
 
+<div class="section-gap"></div>
+
 <p>
 	<span class="font-color-accent">Via Virtuosa</span> è un aggregatore e acceleratore di competenze indipendente,
 	focalizzato sui servizi di terza parte nei settori della Cyber Security e dell’IT Governance.
@@ -19,6 +21,10 @@
 <style>
 	.nav-bar-gap {
 		height: 130px;
+	}
+
+	.section-gap {
+		height: 150px;
 	}
 
 	.landing {
