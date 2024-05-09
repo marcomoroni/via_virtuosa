@@ -1,6 +1,10 @@
 <div class="stack">
 	<div class="layer-image">
-		<img class="hochosterwitz" src="/images/hochosterwitz-4423670_1920.jpg" />
+		<img
+			class="hochosterwitz"
+			src="/images/hochosterwitz-4423670_1920.jpg"
+			alt="Castello di Hochosterwitz"
+		/>
 	</div>
 	<div class="layer-tint"></div>
 	<div class="layer-fade"></div>
