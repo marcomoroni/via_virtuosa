@@ -12,7 +12,8 @@
 <style>
 	.landing {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: var(--main-grid-template-columns);
+		column-gap: var(--main-grid-column-gap);
 	}
 
 	.image-container {
