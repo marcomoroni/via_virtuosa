@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LandingImage from '$lib/LandingImage.svelte';
+	import LandingImage from '$lib/home/LandingImage.svelte';
 </script>
 
 <div class="landing">
