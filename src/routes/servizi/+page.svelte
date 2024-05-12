@@ -21,10 +21,6 @@
 						<div class="fade"></div>
 					</div>
 					<div class="content-container">
-						{#each entry.intro as introParagraph}
-							<p class="font-color-light font-line-height-default">{introParagraph}</p>
-						{/each}
-						<h3 class="font-color-dark font-line-height-default">Cosa facciamo?</h3>
 						<ul class="list-with-disc">
 							{#each entry.cosaFacciamo as cosaFacciamoEntry}
 								<li class="font-color-light">{cosaFacciamoEntry}</li>
@@ -76,13 +72,6 @@
 		padding-top: 27px;
 		top: var(--bar-thickness);
 		align-self: start;
-	}
-
-	h3 {
-		margin-top: 33px;
-		margin-bottom: 15px;
-		font-size: 20px;
-		text-wrap: balance;
 	}
 
 	li {
