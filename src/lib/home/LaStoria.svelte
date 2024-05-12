@@ -11,7 +11,7 @@ Security."
 		Esperienza costruita negli anni
 	{/snippet}
 	{#snippet illustration()}
-		<img class="image" src="/images/Primo-Piano.jpg" alt="Luca Moroni a un convegno" />
+		<img class="image" src="/images/Infosek23_3_2.jpg" alt="Luca Moroni ad un convegno" />
 	{/snippet}
 	{#snippet link()}
 		<PageLink href={'/storia'} label={'La Storia'}></PageLink>
