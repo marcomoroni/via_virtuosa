@@ -10,6 +10,8 @@
 }
 
 html {
+	--color-base-light: #6f6352;
+	--color-base-dark: #3d2e18;
 	--color-background: #e9e6e1;
 	--color-accent: #dc9c51;
 	--color-accent-dark: #b57428;
@@ -27,7 +29,8 @@ body {
 	flex-shrink: 0;
 }
 
-img {
+img,
+svg {
 	display: block;
 }
 
@@ -48,11 +51,11 @@ strong {
 }
 
 .font-color-light {
-	color: #6f6352;
+	color: var(--color-base-light);
 }
 
 .font-color-dark {
-	color: #3d2e18;
+	color: var(--color-base-dark);
 }
 
 .font-color-accent {

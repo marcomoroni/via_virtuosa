@@ -14,4 +14,8 @@
 		position: relative;
 		top: 0.2px;
 	}
+
+	.arrow :global(svg) {
+		display: inline-block;
+	}
 </style>
