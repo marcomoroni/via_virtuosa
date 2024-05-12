@@ -9,7 +9,7 @@
 	text="Abbiamo creato Cyber Security Angels, una rete di sole aziende finali in cui non sono ammessi Vendor e Integratori sui temi della Cybersecurity e IT Governance al fine di far fronte comune agli incidenti di cyber security e fare networking sul territorio."
 >
 	{#snippet header()}
-		Difendi Il tuo castello insieme ai <span class="highlight">Cyber Security Angels</span>
+		Difendi il tuo castello insieme ai <span class="highlight">Cyber Security Angels</span>
 	{/snippet}
 	{#snippet illustration()}
 		<div class="logo-container">
