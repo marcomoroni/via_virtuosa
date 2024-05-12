@@ -1,5 +1,6 @@
 <script lang="ts">
 	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
+	import { headTitle } from '$lib/headTitle';
 
 	const entries = [
 		{
@@ -107,6 +108,10 @@
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>{headTitle('Servizi')}</title>
+</svelte:head>
 
 <div class="nav-bar-gap"></div>
 

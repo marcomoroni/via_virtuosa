@@ -5,6 +5,10 @@
 	import WhatIsViaVirtuosa from '$lib/home/WhatIsViaVirtuosa.svelte';
 </script>
 
+<svelte:head>
+	<title>Via Virtuosa</title>
+</svelte:head>
+
 {#snippet sectionGap()}
 	<div class="section-gap"></div>
 {/snippet}

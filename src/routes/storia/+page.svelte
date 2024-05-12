@@ -1,6 +1,11 @@
 <script>
 	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
+	import { headTitle } from '$lib/headTitle';
 </script>
+
+<svelte:head>
+	<title>{headTitle('La Storia')}</title>
+</svelte:head>
 
 <div class="nav-bar-gap"></div>
 

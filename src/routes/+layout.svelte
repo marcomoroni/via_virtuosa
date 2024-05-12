@@ -6,10 +6,6 @@
 	let { children } = $props();
 </script>
 
-<svelte:head>
-	<title>Via Virtuosa</title>
-</svelte:head>
-
 <NavigationBar />
 
 {@render children()}
