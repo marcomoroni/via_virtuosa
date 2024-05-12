@@ -41,6 +41,7 @@
 		<NavigationBarButton
 			label="Prenota una chiamata"
 			highlight={$page.route.id === navEntries[2].href}
+			href="https://koalendar.com/e/incontro-con-luca-moroni"
 		/>
 	</div>
 </nav>

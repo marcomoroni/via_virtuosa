@@ -1,15 +1,15 @@
 <script lang="ts">
-	let { label, highlight }: { label: string; highlight: boolean } = $props();
+	let { label, highlight, href }: { label: string; highlight: boolean; href: string } = $props();
 </script>
 
-<button class="font-size-default font-weight-default font-color-accent-dark" class:highlight>
+<a {href} class="font-size-default font-weight-default font-color-accent-dark" class:highlight>
 	<div class="label font-size-default font-weight-default font-color-accent-dark">
 		{label}
 	</div>
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		--horizontal-padding: 22px;
 		padding-left: var(--horizontal-padding);
 		padding-right: var(--horizontal-padding);
