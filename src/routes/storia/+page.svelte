@@ -1,5 +1,6 @@
 <script>
 	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
+	import ViaVirtuosaLogo from '$lib/ViaVirtuosaLogo.svelte';
 	import { headTitle } from '$lib/headTitle';
 </script>
 
@@ -10,6 +11,17 @@
 <div class="nav-bar-gap"></div>
 
 <HorizontalMarginScaffold>
+	<div class="illustation-container">
+		<div class="illustation-2">
+			<ViaVirtuosaLogo fillColor="dim" />
+		</div>
+		<div class="illustation-1">
+			<img
+				src="/images/immagine-strada.png"
+				alt="ClipArt che ha ispirato il logo di Via Virtuosa"
+			/>
+		</div>
+	</div>
 	<div class="type-container">
 		<p class="font-color-light font-line-height-default">
 			Nel 2008 avevo raggiunto una mansione di responsabilità ed ero un quadro all’interno di una
@@ -56,6 +68,40 @@
 
 	.bottom-gap {
 		height: 200px;
+	}
+
+	.illustation-container {
+		display: grid;
+		--displacement: 2.7fr;
+		grid-template-columns: var(--displacement) 1fr var(--displacement);
+		grid-template-rows: var(--displacement) 1fr var(--displacement);
+		margin-bottom: 90px;
+	}
+
+	.illustation-1 {
+		grid-row: 1 / 3;
+		grid-column: 1 / 3;
+	}
+
+	.illustation-2 {
+		grid-row: 2 / 4;
+		grid-column: 2 / 4;
+	}
+
+	@media (max-width: 660px) {
+		.illustation-container {
+			grid-template-columns: unset;
+			grid-template-rows: unset;
+		}
+
+		.illustation-1 {
+			grid-row: unset;
+			grid-column: unset;
+		}
+
+		.illustation-2 {
+			display: none;
+		}
 	}
 
 	.type-container {
