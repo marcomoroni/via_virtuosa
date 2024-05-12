@@ -72,10 +72,12 @@
 
 	.illustation-container {
 		display: grid;
-		--displacement: 2.7fr;
-		grid-template-columns: var(--displacement) 1fr var(--displacement);
-		grid-template-rows: var(--displacement) 1fr var(--displacement);
+		grid-template-columns: 3fr 1fr 1.9fr;
+		grid-template-rows: 2fr 1fr 2fr;
 		margin-bottom: 90px;
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.illustation-1 {
