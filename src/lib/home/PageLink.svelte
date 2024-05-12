@@ -9,7 +9,7 @@
 </script>
 
 <a
-	class="font-line-height-default"
+	class="font-line-height-default font-weight-default"
 	class:font-color-accent={color === 'accent'}
 	class:blue={color === 'blue'}
 	{href}>{label}<span class="arrow"><PageLinkArrow {color} /></span></a

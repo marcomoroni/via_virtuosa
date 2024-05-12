@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="type-container">
-		<p class="font-color-light font-line-height-default">
+		<p class="font-color-light font-line-height-default font-weight-default">
 			Nel 2008 avevo raggiunto una mansione di responsabilità ed ero un quadro all’interno di una
 			azienda. Per una serie di motivi, il progetto è decaduto e mi sono trovato davanti ad una
 			scelta difficile.
@@ -35,11 +35,11 @@
 			Ho scelto di ricominciare con una componente di rischio molto alta. Cercare di reinventarsi non
 			è facile ma le esperienze di imprenditore dopo la laurea mi hanno aiutato.
 		</p>
-		<p class="font-color-light font-line-height-default">
+		<p class="font-color-light font-line-height-default font-weight-default">
 			Durante quei giorni pensavo che avrei dovuto evitare di percorrere una strada che mi avrebbe
 			potuto far tornare al punto di partenza (il Via del Monopoli per chi lo conosce).
 		</p>
-		<p class="font-color-light font-line-height-default">
+		<p class="font-color-light font-line-height-default font-weight-default">
 			Cercando una idea diversa mi sono imbattuto in una vecchia illustrazione di Windows con un
 			uomo davanti ad un bivio. Non so chi di voi se la ricorda o l’ha mai vista? Sicuramente solo
 			gli x-enta o gli x-anta. Direi che lei ha trovato me. Ho pensato di iniziare una nuova via e
@@ -56,7 +56,9 @@
 			chiedono di ripetere il nome perché sono abituati a sentire Tech.., Sys…, Serv…, Sec… Auguro a
 			tutti quelli che sono davanti ad una scelta di vita di trovare la loro Via Virtuosa.
 		</p>
-		<div class="signature font-line-height-default">Luca Moroni — CEO Via Virtuosa</div>
+		<div class="signature font-line-height-default font-weight-default">
+			Luca Moroni — CEO Via Virtuosa
+		</div>
 	</div>
 </HorizontalMarginScaffold>
 

@@ -24,7 +24,7 @@
 					<div class="content-container">
 						<ul class="list-with-disc">
 							{#each entry.cosaFacciamo as cosaFacciamoEntry}
-								<li class="font-color-light">{cosaFacciamoEntry}</li>
+								<li class="font-color-light font-weight-default">{cosaFacciamoEntry}</li>
 							{/each}
 						</ul>
 					</div>

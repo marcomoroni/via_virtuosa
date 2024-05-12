@@ -1,5 +1,5 @@
 <div class="what-is-via-virtuosa-container">
-	<p class="what-is-via-virtuosa font-color-dark font-line-height-default">
+	<p class="what-is-via-virtuosa font-color-dark font-line-height-default font-weight-default">
 		<span class="what-is-via-virtuosa-accent">Via Virtuosa</span> è un aggregatore e acceleratore di
 		competenze indipendente, focalizzato sui servizi di terza parte nei settori della Cyber Security
 		e dell’IT Governance.

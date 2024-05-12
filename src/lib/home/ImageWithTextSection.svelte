@@ -24,11 +24,14 @@
 		{@render illustration()}
 	</div>
 	<div class="type" class:with-padding={background !== undefined}>
-		<h2 class="font-color-dark" class:white={background === 'blue'}>
+		<h2 class="font-color-dark font-weight-default" class:white={background === 'blue'}>
 			{@render header()}
 		</h2>
 		<div class="title-gap"></div>
-		<p class="font-color-light font-line-height-default" class:white={background === 'blue'}>
+		<p
+			class="font-color-light font-line-height-default font-weight-default"
+			class:white={background === 'blue'}
+		>
 			{text}
 		</p>
 		<div class="small-gap"></div>

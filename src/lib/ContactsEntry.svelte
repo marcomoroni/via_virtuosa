@@ -9,7 +9,7 @@
 		<div class="icon">
 			{@render icon()}
 		</div>
-		<div class="text font-color-light font-line-height-default">
+		<div class="text font-color-light font-line-height-default font-weight-default">
 			{@render text()}
 		</div>
 	</a>
