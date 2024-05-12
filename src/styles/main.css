@@ -15,6 +15,7 @@ html {
 	--color-background: #e9e6e1;
 	--color-accent: #dc9c51;
 	--color-accent-dark: #b57428;
+	--color-csa-blue: #0a77b4;
 	--main-grid-template-columns: repeat(8, 1fr);
 	--main-grid-column-gap: 20px;
 }

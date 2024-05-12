@@ -1,7 +1,9 @@
 <script lang="ts">
 	import HorizontalMarginScaffold from '$lib/HorizontalMarginScaffold.svelte';
+	import CyberSecurityAngles from '$lib/home/CyberSecurityAngles.svelte';
 	import LaStoria from '$lib/home/LaStoria.svelte';
 	import Landing from '$lib/home/Landing.svelte';
+	import Servizi from '$lib/home/Servizi.svelte';
 	import WhatIsViaVirtuosa from '$lib/home/WhatIsViaVirtuosa.svelte';
 </script>
 
@@ -23,6 +25,10 @@
 	<div class="line"></div>
 	{@render sectionGap()}
 	<LaStoria />
+	{@render sectionGap()}
+	<Servizi />
+	{@render sectionGap()}
+	<CyberSecurityAngles />
 	{@render sectionGap()}
 </HorizontalMarginScaffold>
 

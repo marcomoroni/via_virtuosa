@@ -1,11 +1,18 @@
 <script lang="ts">
 	import PageLinkArrow from './PageLinkArrow.svelte';
 
-	let { href, label }: { href: string; label: string } = $props();
+	let {
+		href,
+		label,
+		color = 'accent'
+	}: { href: string; label: string; color?: 'accent' | 'blue' } = $props();
 </script>
 
-<a class="font-color-accent font-line-height-default" {href}
-	>{label}<span class="arrow"><PageLinkArrow /></span></a
+<a
+	class="font-line-height-default"
+	class:font-color-accent={color === 'accent'}
+	class:blue={color === 'blue'}
+	{href}>{label}<span class="arrow"><PageLinkArrow {color} /></span></a
 >
 
 <style>
@@ -17,5 +24,9 @@
 
 	.arrow :global(svg) {
 		display: inline-block;
+	}
+
+	a.blue {
+		color: var(--color-csa-blue);
 	}
 </style>

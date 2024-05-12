@@ -1,4 +1,15 @@
-<svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<script lang="ts">
+	let { color = 'accent' }: { color?: 'accent' | 'blue' } = $props();
+</script>
+
+<svg
+	width="22"
+	height="12"
+	viewBox="0 0 22 12"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+	class:blue={color === 'blue'}
+>
 	<path
 		fill-rule="evenodd"
 		clip-rule="evenodd"
@@ -9,5 +20,9 @@
 <style>
 	path {
 		fill: var(--color-accent);
+	}
+
+	.blue path {
+		fill: var(--color-csa-blue);
 	}
 </style>

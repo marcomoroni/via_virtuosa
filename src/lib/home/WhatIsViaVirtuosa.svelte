@@ -20,7 +20,7 @@
 
 	@media (max-width: 1100px) {
 		.what-is-via-virtuosa {
-			grid-column: 1 / 5;
+			grid-column: 1 / 9;
 		}
 	}
 
