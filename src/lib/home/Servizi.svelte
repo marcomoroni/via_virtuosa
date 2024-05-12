@@ -5,11 +5,10 @@
 </script>
 
 <ImageWithTextSection
-	text="Via Virtuosa nasce nel 2008 dall’esperienza decennale del suo fondatore nel settore IT e Cyber
-Security."
+	text="Con una visione ampia e d’insieme, il broker indipendente ha gli ha gli strumenti per creare la squadra giusta di esperti."
 >
 	{#snippet header()}
-		Servizi...
+		Prediligiamo qualità e servizi su misura
 	{/snippet}
 	{#snippet illustration()}
 		<div class="illustration">
