@@ -5,10 +5,13 @@
 	import Landing from '$lib/home/Landing.svelte';
 	import Servizi from '$lib/home/Servizi.svelte';
 	import WhatIsViaVirtuosa from '$lib/home/WhatIsViaVirtuosa.svelte';
+
+	const landingType = 'Il tuo cyber security personal trainer';
 </script>
 
 <svelte:head>
 	<title>Via Virtuosa</title>
+	<meta name="description" content={landingType} />
 </svelte:head>
 
 {#snippet sectionGap()}
@@ -18,7 +21,7 @@
 <div class="nav-bar-gap"></div>
 
 <HorizontalMarginScaffold>
-	<Landing />
+	<Landing {landingType} />
 	{@render sectionGap()}
 	<WhatIsViaVirtuosa />
 	{@render sectionGap()}

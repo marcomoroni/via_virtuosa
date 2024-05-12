@@ -1,12 +1,14 @@
 <script lang="ts">
 	import LandingImage from '$lib/home/LandingImage.svelte';
+
+	let { landingType }: { landingType: string } = $props();
 </script>
 
 <div class="landing">
 	<div class="image-container">
 		<LandingImage />
 	</div>
-	<p class="landing-type font-color-accent">Il tuo cyber security personal trainer</p>
+	<p class="landing-type font-color-accent">{landingType}</p>
 </div>
 
 <style>

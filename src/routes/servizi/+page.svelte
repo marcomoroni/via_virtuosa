@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<title>{headTitle('Servizi')}</title>
+	<meta name="description" content="Come ti supportiamo" />
 </svelte:head>
 
 <div class="nav-bar-gap"></div>

@@ -10,6 +10,7 @@
 
 <svelte:head>
 	<title>{headTitle('Contatti')}</title>
+	<meta name="description" content="Fai due chiacchere con Luca Moroni" />
 </svelte:head>
 
 <HorizontalMarginScaffold>

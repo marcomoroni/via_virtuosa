@@ -6,6 +6,7 @@
 
 <svelte:head>
 	<title>{headTitle('La Storia')}</title>
+	<meta name="description" content="Come è nata Via Virtuosa" />
 </svelte:head>
 
 <div class="nav-bar-gap"></div>
