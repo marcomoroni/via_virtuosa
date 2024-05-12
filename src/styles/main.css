@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'Figtree';
+	src: url(/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src: url(/fonts/Figtree-Italic-VariableFont_wght.ttf);
+	font-style: italic;
+}
+
+html {
+	--color-base-light: #6f6352;
+	--color-base-dark: #3d2e18;
+	--color-background: #e9e6e1;
+	--color-accent: #dc9c51;
+	--color-accent-dark: #b57428;
+	--color-csa-blue: #0a77b4;
+	--main-grid-template-columns: repeat(8, 1fr);
+	--main-grid-column-gap: 20px;
+}
+
+body {
+	background-color: var(--color-background);
+	font-family: 'Figtree', sans-serif;
+	color: magenta;
+}
+
+* {
+	flex-shrink: 0;
+}
+
+img,
+svg {
+	display: block;
+}
+
+button {
+	cursor: pointer;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.font-weight-default {
+	font-weight: 520;
+}
+
+.font-size-default {
+	font-size: 16px;
+}
+
+.font-color-light {
+	color: var(--color-base-light);
+}
+
+.font-color-dark {
+	color: var(--color-base-dark);
+}
+
+.font-color-accent {
+	color: var(--color-accent);
+}
+
+.font-color-accent-dark {
+	color: var(--color-accent-dark);
+}
+
+.font-line-height-default {
+	line-height: 1.6;
+}
+
+.list-with-disc {
+	list-style-type: disc;
+	margin-left: 25px;
+}
