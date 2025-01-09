@@ -13,7 +13,7 @@
 		--horizontal-padding: 22px;
 		padding-left: var(--horizontal-padding);
 		padding-right: var(--horizontal-padding);
-		height: 52px;
+		height: var(--nav-bar-button-height);
 		display: grid;
 		border-radius: calc(infinity * 1px);
 		border: 2px solid #dad5cf;

@@ -18,6 +18,7 @@ html {
 	--color-csa-blue: #0a77b4;
 	--main-grid-template-columns: repeat(8, 1fr);
 	--main-grid-column-gap: 20px;
+	--nav-bar-button-height: 52px;
 }
 
 body {

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import ChevronLeft from './icons/ChevronLeft.svelte';
+	import ChevronRight from './icons/ChevronRight.svelte';
 	import NavigationBarButton from './NavigationBarButton.svelte';
 	import NavigationBarLink from './NavigationBarLink.svelte';
 	import ViaVirtuosaLogo from './ViaVirtuosaLogo.svelte';
@@ -21,7 +23,60 @@
 			flatRightSide: true
 		}
 	];
+
+	let width = $state(0);
+	let scrollWidth = $state(0);
+	let scrollLeft = $state(0);
+	function scrollWithArrows(el: HTMLElement) {
+		$effect(() => {
+			const resizeObserver = new ResizeObserver((entries) => {
+				const entry = entries.at(0);
+				if (entry) {
+					width = entry.target.clientWidth;
+					scrollWidth = entry.target.scrollWidth;
+				}
+			});
+			resizeObserver.observe(el);
+
+			el.onscroll = () => {
+				scrollLeft = el.scrollLeft;
+			};
+
+			return () => resizeObserver.disconnect();
+		});
+	}
+	const epsilon = 3;
+	let isScrollable = $derived(scrollWidth > width);
+	let leftIsOverflowing = $derived(scrollLeft > 0 + epsilon);
+	let rightIsOverflowing = $derived(scrollLeft + width < scrollWidth - epsilon);
+	let leftArrowIsVisible = $derived(isScrollable && leftIsOverflowing);
+	let rightArrowIsVisible = $derived(isScrollable && rightIsOverflowing);
+
+	let scrollEl: HTMLElement;
+	let scrollByButtonAmount = $derived(width * 0.6);
+	function scrollALittle(direction: 'left' | 'right') {
+		const scrollAmount = scrollByButtonAmount * (direction === 'left' ? -1 : 1);
+		scrollEl.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+	}
 </script>
+
+{#snippet scrollArrow(direction: 'left' | 'right')}
+	<button
+		class="scroll-arrow"
+		class:left={direction === 'left'}
+		class:right={direction === 'right'}
+		class:visible={direction === 'left' ? leftArrowIsVisible : rightArrowIsVisible}
+		onclick={() => scrollALittle(direction)}
+	>
+		<div class="arrow-icon-container">
+			{#if direction === 'left'}
+				<ChevronLeft />
+			{:else}
+				<ChevronRight />
+			{/if}
+		</div>
+	</button>
+{/snippet}
 
 <nav>
 	<div class="row-1">
@@ -32,15 +87,17 @@
 			<div class="logo-text font-color-accent">Via Virtuosa</div>
 		</a>
 	</div>
-	<div class="row-2">
+	<div class="row-2" bind:this={scrollEl} use:scrollWithArrows>
+		{@render scrollArrow('left')}
+		{@render scrollArrow('right')}
 		{#each navEntries as navEntry}
 			{@const isCurrentPage = $page.route.id === navEntry.href}
 			{@const flatSide = navEntry.flatRightSide && isCurrentPage}
 			<NavigationBarLink href={navEntry.href} label={navEntry.label} {isCurrentPage} {flatSide} />
 		{/each}
 		<NavigationBarButton
-			label="Prenota una chiamata"
 			highlight={$page.route.id === navEntries[2].href}
+			label="Prenota una Chiamata"
 			href="https://koalendar.com/e/incontro-con-luca-moroni"
 		/>
 	</div>
@@ -98,5 +155,36 @@
 		align-self: center;
 		text-wrap: nowrap;
 		user-select: none;
+	}
+
+	.scroll-arrow {
+		position: absolute;
+		height: var(--nav-bar-button-height);
+		width: 50px;
+		display: grid;
+	}
+
+	.scroll-arrow:not(.visible) {
+		display: none;
+	}
+
+	.scroll-arrow.left {
+		left: 0;
+		background: linear-gradient(90deg, var(--color-background) 70%, transparent 100%);
+	}
+
+	.scroll-arrow.right {
+		right: 0;
+		background: linear-gradient(270deg, var(--color-background) 70%, transparent 100%);
+	}
+
+	.arrow-icon-container {
+		width: 24px;
+		align-self: center;
+		justify-self: center;
+	}
+
+	.arrow-icon-container :global(*) {
+		stroke: #766347;
 	}
 </style>
