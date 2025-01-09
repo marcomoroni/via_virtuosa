@@ -6,6 +6,7 @@
 	import Mail from '$lib/icons/Mail.svelte';
 	import MapPin from '$lib/icons/MapPin.svelte';
 	import Phone from '$lib/icons/Phone.svelte';
+	import YouTube from '$lib/icons/YouTube.svelte';
 </script>
 
 <svelte:head>
@@ -21,6 +22,14 @@
 			{/snippet}
 			{#snippet text()}
 				LinkedIn
+			{/snippet}
+		</ContactsEntry>
+		<ContactsEntry href="https://www.youtube.com/@viavirtuosa">
+			{#snippet icon()}
+				<YouTube />
+			{/snippet}
+			{#snippet text()}
+				YouTube
 			{/snippet}
 		</ContactsEntry>
 		<ContactsEntry href="mailto:tao@viavirtuosa.it">
